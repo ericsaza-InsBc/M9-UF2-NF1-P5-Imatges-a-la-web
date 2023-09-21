@@ -1,0 +1,20 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Amb flex-wrap farem que el responsive sigui més facil. */
+    justify-content: center;
+}
+
+.ejemplo {
+    padding: 3%;
+    text-align: center;
+}
