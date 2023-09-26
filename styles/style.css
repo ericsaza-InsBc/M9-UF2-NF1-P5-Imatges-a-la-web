@@ -6,15 +6,20 @@
   height: 100%;
 }
 
+/* Estilo para las imágenes en 2x2 */
 .contenido {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Amb flex-wrap farem que el responsive sigui més facil. */
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .ejemplo {
-    padding: 3%;
-    text-align: center;
+  text-align: center;
+}
+
+/* Media query para cambiar a una columna a partir de 600px */
+@media (max-width: 600px) {
+  .contenido {
+    grid-template-columns: 1fr;
+  }
 }
